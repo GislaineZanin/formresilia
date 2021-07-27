@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Resília</title>
+
+    <style>
+
+        *{
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+        }
+
+        .comeco{
+            background-color: rgb(59, 59, 59);
+            border-radius: 7px;
+            box-shadow: 3px 3px 3px rgb(0, 0, 0.2);
+            padding: 2rem;
+            min-height: 40vh;
+            max-width: 350px;
+        }
+
+        .cad{
+            color: rgb(201, 201, 201);
+            margin-left: 7%;
+            font-weight: 600;
+            position: relative;
+        }
+
+        fieldset{
+            border: 0;
+        }
+
+        body{
+            background-color: rgb(255, 227, 100);
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-top: 10%;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input{
+            border: none;
+            border-radius: 7px;
+            background-color: rgb(245, 222, 179);
+        }
+
+        input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+        .preencher{
+            margin-bottom: 2rem;
+        }
+
+        .preencher label{
+            margin-bottom: 0.2em;
+            color: rgb(213, 218, 157);
+            display: block;
+        }
+
+        .preencher input{
+            padding: 0.2em;
+            box-shadow: 2px 2px 2px rgb(0, 0, 0.2);
+            display: block;
+        }
+
+        button{
+            font-size: 18PX;
+            cursor: pointer;
+            background: rgb(233, 233, 55);
+            border: 0;
+            border-radius: 7px;
+            margin-bottom: 2em;
+            color: rgb(0, 0, 0);
+            padding: 0.2em 0.6em;
+            box-shadow: 2px 2px 2px rgb(0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="comeco">
+        <div>
+            <h1 class="cad">Cadastro Resília</h1>
+        </div>
+
+            <form>
+                <fieldset>
+                <div class="preencher">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Coloque seu nome" required>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="preencher">
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Coloque seu melhor e-mail" required>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="preencher">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Coloque seu telefone" required>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="preencher">
+                    <label for="data de nascimento">Data de nascimento</label>
+                    <input type="date" name="data de nascimento" id="nascimento" placeholder="Data de nascimento" required>
+                    <div class="underline">
+                </div> 
+
+                </fieldset>
+
+                <button type="submit"><strong>ENVIAR</strong></button>
+            
+            </form>
+    </div>
+</body>
+</html>
